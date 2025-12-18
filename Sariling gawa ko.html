@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Wzup Boss</title>
+  <style>
+      .container {
+  width: 100%;
+  overflow: hidden; /* Itatago ang text na lumalabas sa container */
+  background-color: #f0f0f0;
+  padding: 10px 0;
+}
+
+.flowing-text {
+  white-space: nowrap; /* Huwag mag-wrap ng text sa bagong linya */
+  animation: flow 15s linear infinite; /* 15s = bilis ng animation, infinite = paulit-ulit */
+  font-size: 18px;
+  color: #333;
+}
+
+@keyframes flow {
+  from { transform: translateX(100%); } /* Simula sa kanang bahagi ng container */
+  to { transform: translateX(-100%); } /* Tatapusin sa kaliwang bahagi */
+}
+  
+.colored-btn {
+         background-color: #4CAF50;
+         color:white;
+         padding: 10px 20px;
+         border: none;
+         border-radius: 5px;
+         font-size: 16px;
+}
+  
+  </style>
+  <script>
+    function showMessage() {
+      alert("Sus kunwari ako pero yung totoo kaklase nya.");
+    }
+    function showMessage2() {
+      alert("Edi dun kana sa kaklase mo!.");
+    }
+  
+  </script>
+</head>
+<body bgcolor="green">
+    <div class="container">
+  <h3 class="flowing-text">Hi Love</h3>
+</div>
+    <img src="Sariling gawa ko.jpeg" width="400" height="200">
+  <b>Sino mas pogi?<hr></b>
+  <p>pindutin mo isa jan</p>
+  <button class="colored-btn" onclick="showMessage()">ako</button><p>or</p><button class="colored-btn" onclick="showMessage2()">kaklase mo</button>
+</body>
+</html>
